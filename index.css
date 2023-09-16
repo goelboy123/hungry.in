@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navlist{
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    justify-content:space-around;
+}
+.container{
+    width: 100vw;
+    height: 600px;
+    background-color: bisque;
+    
+}
+.navcontainer{
+    width: 100vw;
+    height: 60px;
+    background-color:#0093E9;
+    background-image: linear-gradient(160deg,#0093E9 0%,#80d0c7 100%);
+}
+#sitelogo{
+    font-size: 40px;
+    font-style: italic;
+    color:beige;
+}
+#headitem{
+    display: flex;
+    gap: 20px;
+}
+.footerbox1{
+    color:black;
+    margin: 10px;
+    background-color: #0093E9;
+    background-image:linear-gradient(160deg,#0093E9 0%,#80d0c7 100%);
+    color: beige;
+    display: flex;
+    justify-content: center;
+}
+.contentbox1{
+    width: 70%;
+    margin: 120px;
+    margin-top: 30px;
+    padding: 30px;
+    /* border: 2px solid black; */
+    box-shadow: 3px 3px 30px black;
+    
+    
+
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fieldset{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    gap: 20px;
+    height: 150px;
+}
+.item{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    
+}
+.rightbox{
+    position: relative;
+}
+.rightbox img{
+    height: 220px;
+    width: 500px;
+    /* margin-top: 0px; */
+    border-radius: 20px;
+    
+    transition: all 0.6s linear 0s;
+
+}
+.rightbox img:hover{
+    transform:scale(0.9)
+}
+.rightbox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
+    /* gap: 10px; */
+}
+.price{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    
+}
+#paise{
+    font-style: italic;
+    font-size: 30px;
+}
+.price img{
+    height: 100px;
+    width: 300px;
+    
+}
+.rightbox .overlays{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(36, 34, 34,0.713);
+    height: 220px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color:aliceblue;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.6s linear;
+    
+    
+}
+.rightbox:hover .overlays{
+    opacity: 1;
+}
